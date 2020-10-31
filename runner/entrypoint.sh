@@ -46,4 +46,5 @@ for f in runsvc.sh RunnerService.js; do
 done
 
 unset RUNNER_NAME RUNNER_REPO RUNNER_TOKEN
+sudo chown root:docker /var/run/docker.sock
 exec ./bin/runsvc.sh --once
